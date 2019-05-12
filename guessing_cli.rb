@@ -7,13 +7,13 @@ def run_guessing_game
       input = gets.chomp
       rando = rand(1..6)
       case input
-      when input.to_i == rando
+      when rando.to_s
         puts "You guessed the correct number!"
       when "exit"
         puts "Goodbye!"
         break
       else
-        puts "The computer guessed #{rando}"
+        puts "The computer guessed #{rando}."
       end
     end
 end
